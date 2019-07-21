@@ -1,6 +1,10 @@
 package RunnerClass;
 
+import java.awt.Desktop;
+import java.io.File;
+
 import org.apache.log4j.Logger;
+import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -42,8 +46,10 @@ try{
 	
 	if(mainChangePasswordflag==true){
 		ExcelUtils.setCellData("Pass",1,4,"Scenario",filePath);
+		Assert.assertTrue(true);
 	}else{
 		ExcelUtils.setCellData("Fail",1,4,"Scenario",filePath);
+	Assert.fail("Validation for new password failed");
 	}
 		
 	System.out.println("Change Password Result --"+mainChangePasswordflag);
@@ -56,7 +62,7 @@ try{
 @AfterSuite
 public void close() {
 	try{
-	Runtime.getRuntime().exec("E:\\Project\\git project\\Change_Password\\src\\main\\java\\DataSheet\\ChangePassword.xlsx");  
+	Desktop.getDesktop().open(new File(filePath));
 	System.out.println("close");
 	}catch(Exception e){
 		System.out.println("Exception to open excel file-"+filePath+e);

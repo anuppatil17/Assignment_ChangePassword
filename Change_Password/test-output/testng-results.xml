@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1066" started-at="2019-07-21T11:57:38Z" finished-at="2019-07-21T11:57:39Z">
+  <suite name="Default suite" duration-ms="1382" started-at="2019-07-21T17:20:29Z" finished-at="2019-07-21T17:20:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1066" started-at="2019-07-21T11:57:38Z" finished-at="2019-07-21T11:57:39Z">
+    <test name="Default test" duration-ms="1382" started-at="2019-07-21T17:20:29Z" finished-at="2019-07-21T17:20:30Z">
       <class name="RunnerClass.RunnerClass">
-        <test-method status="PASS" signature="AssignData()[pri:0, instance:RunnerClass.RunnerClass@61a485d2]" name="AssignData" is-config="true" duration-ms="1324" started-at="2019-07-21T17:27:37Z" finished-at="2019-07-21T17:27:38Z">
+        <test-method status="PASS" signature="AssignData()[pri:0, instance:RunnerClass.RunnerClass@61a485d2]" name="AssignData" is-config="true" duration-ms="1854" started-at="2019-07-21T22:50:27Z" finished-at="2019-07-21T22:50:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AssignData -->
-        <test-method status="PASS" signature="SC_001()[pri:0, instance:RunnerClass.RunnerClass@61a485d2]" name="SC_001" duration-ms="1038" started-at="2019-07-21T17:27:38Z" description="Validate Change Password function with two parameters (newPassword &amp; oldPassword) should match with all password validation rules." finished-at="2019-07-21T17:27:39Z">
+        <test-method status="PASS" signature="SC_001()[pri:0, instance:RunnerClass.RunnerClass@61a485d2]" name="SC_001" duration-ms="1353" started-at="2019-07-21T22:50:29Z" description="Validate Change Password function with two parameters (newPassword &amp; oldPassword) should match with all password validation rules." finished-at="2019-07-21T22:50:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SC_001 -->
-        <test-method status="PASS" signature="close()[pri:0, instance:RunnerClass.RunnerClass@61a485d2]" name="close" is-config="true" duration-ms="5" started-at="2019-07-21T17:27:39Z" finished-at="2019-07-21T17:27:39Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:RunnerClass.RunnerClass@61a485d2]" name="close" is-config="true" duration-ms="2926" started-at="2019-07-21T22:50:30Z" finished-at="2019-07-21T22:50:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
