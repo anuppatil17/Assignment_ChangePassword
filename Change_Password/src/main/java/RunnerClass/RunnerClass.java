@@ -11,33 +11,35 @@ import org.testng.annotations.Test;
 
 import Assignment.Change_Password.PasswordVerification;
 import ExcelUtils.ExcelUtils;
+import junit.framework.Assert;
 
 public class RunnerClass {
 	public static String specialCharacters = "!@#$&*";// Special characters list
 	public static String newPassword;
-	public static String projectPath = System.getProperty("user.dir");//get current project directory
-	public static String filePath = projectPath + "\\\\src\\\\main\\\\java\\\\DataSheet\\\\ChangePassword.xlsx";// excel file for testcases
+	public static String projectPath = System.getProperty("user.dir");// get
+																		// current
+																		// project
+																		// directory
+	public static String filePath = projectPath + "\\\\src\\\\main\\\\java\\\\DataSheet\\\\ChangePassword.xlsx";// excel
+																												// file
+																												// for
+																												// testcases
 
-	
 	public static boolean mainChangePasswordflag = false, passwordStrengthFlag = false, repeatedCharCheckflag = false,
-			passwordRulesflag = false, specialCharflag = false, passwordnumericBalance = false,passwordPercentageMatchflag=false;
+			passwordRulesflag = false, specialCharflag = false, passwordnumericBalance = false,
+			passwordPercentageMatchflag = false;
 	public static int newPasswordLength;
 	public static String oldPassword;
 
-	
-@BeforeSuite	
+	@BeforeSuite
 
-public void AssignData() throws Exception {
-	ExcelUtils.setExcelFile(filePath);
-	int RowNum=ExcelUtils.getRowContains("SC_001", 0, "Scenario");
-	oldPassword=ExcelUtils.getCellData(RowNum,2,"Scenario");
-	newPassword=ExcelUtils.getCellData(RowNum,3,"Scenario");
-	newPasswordLength = newPassword.length();
- 
-		
-}	
-	
-@Test(description = "Validate Change Password function with two parameters (newPassword & oldPassword) should match with all password validation rules.")
+	public void AssignData() throws Exception {
+		ExcelUtils.setExcelFile(filePath);
+		int RowNum = ExcelUtils.getRowContains("SC_001", 0, "Scenario");
+		oldPassword = ExcelUtils.getCellData(RowNum, 2, "Scenario");
+		newPassword = ExcelUtils.getCellData(RowNum, 3, "Scenario");
+		newPasswordLength = newPassword.length();
+
 
 public void SC_001() throws Exception {
 try{
@@ -50,15 +52,30 @@ try{
 	}else{
 		ExcelUtils.setCellData("Fail",1,4,"Scenario",filePath);
 	Assert.fail("Validation for new password failed");
+=======
+>>>>>>> Stashed changes
 	}
-		
-	System.out.println("Change Password Result --"+mainChangePasswordflag);
-}catch(Exception e){
-	System.out.println("Something went wrong-"+e);
-}
 
-}
+	@Test(description = "Validate Change Password function with two parameters (newPassword & oldPassword) should match with all password validation rules.")
 
+	public void SC_001() throws Exception {
+		try {
+			mainChangePasswordflag = PasswordVerification.ChangePassword(oldPassword, newPassword);
+
+			if (mainChangePasswordflag == true) {
+				ExcelUtils.setCellData("Pass", 1, 4, "Scenario", filePath);
+				Assert.assertTrue(true);
+			} else {
+				ExcelUtils.setCellData("Fail", 1, 4, "Scenario", filePath);
+				Assert.fail("New password Validation failed");
+			}
+
+			System.out.println("Change Password Result --" + mainChangePasswordflag);
+		} catch (Exception e) {
+			System.out.println("Something went wrong-" + e);
+		}
+
+<<<<<<< Updated upstream
 @AfterSuite
 public void close() {
 	try{
@@ -66,6 +83,17 @@ public void close() {
 	System.out.println("close");
 	}catch(Exception e){
 		System.out.println("Exception to open excel file-"+filePath+e);
+=======
+>>>>>>> Stashed changes
 	}
+
+	@AfterSuite
+	public void close() {
+		try {
+			Desktop.getDesktop().open(new File(filePath));
+			System.out.println("close");
+		} catch (Exception e) {
+			System.out.println("Exception to open excel file-" + filePath + e);
+		}
 	}
 }
