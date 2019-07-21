@@ -18,9 +18,11 @@ Devloped below scenarios/test cases for different validations
 	5.New Password should contains list of special chars !@#$&* and not contains more than 4 special characters.
 	6.50 % of New Password should not be a number
 
+
+
 Highlights :
-  1.Devloped functions are dynamic.
+1.Devloped functions are dynamic.
   2.As maven is used for project dependency tool and it will automatically downloads are the required dependencies.
-  3.Integrated TestNG Framework to priorities the code execution, using different annotations 
-  4.as excel sheet is used for test data input and providing user friendly execution status.
-  5.The project is sync with git hub so that easy for code management.
+     3.Integrated TestNG Framework to priorities the code execution, using different annotations 
+        4.as excel sheet is used for test data input and providing user friendly execution status.
+           5.The project is sync with git hub so that easy for code management.
