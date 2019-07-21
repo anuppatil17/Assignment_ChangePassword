@@ -21,8 +21,8 @@ Set new password with multiple validations
 
 
 # Highlights :
-	# 1. Devloped functions are dynamic.
+	# 1. Developed functions are dynamic.
   	# 2. As maven is used for project dependency tool and it will automatically downloads are the required dependencies.
    	# 3.Integrated TestNG Framework to priorities the code execution, using different annotations 
-   	# 4. As excel sheet is used for test data input and providing user friendly execution status.(After Exceution Excel will open with updated result)
+   	# 4. As excel sheet is used for test data input and providing user friendly execution status.(After Execution Excel will open with updated result)
    	# 5. The project is sync with git hub so that easy for code management.
