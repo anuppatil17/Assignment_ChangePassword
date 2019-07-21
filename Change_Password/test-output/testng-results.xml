@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1479" started-at="2019-07-21T11:05:04Z" finished-at="2019-07-21T11:05:06Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1479" started-at="2019-07-21T11:05:04Z" finished-at="2019-07-21T11:05:06Z">
+      <class name="RunnerClass.RunnerClass">
+        <test-method status="PASS" signature="AssignData()[pri:0, instance:RunnerClass.RunnerClass@61a485d2]" name="AssignData" is-config="true" duration-ms="1659" started-at="2019-07-21T16:35:03Z" finished-at="2019-07-21T16:35:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssignData -->
+        <test-method status="PASS" signature="SC_001()[pri:0, instance:RunnerClass.RunnerClass@61a485d2]" name="SC_001" duration-ms="1444" started-at="2019-07-21T16:35:04Z" description="Validate Change Password function with two parameters (newPassword &amp; oldPassword) should match with all password validation rules." finished-at="2019-07-21T16:35:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SC_001 -->
+        <test-method status="PASS" signature="close()[pri:0, instance:RunnerClass.RunnerClass@61a485d2]" name="close" is-config="true" duration-ms="79" started-at="2019-07-21T16:35:06Z" finished-at="2019-07-21T16:35:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- RunnerClass.RunnerClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
