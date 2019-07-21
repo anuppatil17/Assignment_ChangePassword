@@ -39,7 +39,7 @@ public class PasswordVerification {
 
 				if (RunnerClass.passwordStrengthFlag == true) {
 
-					System.out.println(" At least 18 alphanumeric characters");
+					System.out.println("At least 18 alphanumeric characters");
 
 					ExcelUtils.setCellData("Pass", 2, 2, "TestCases", RunnerClass.filePath);
 				} else {
