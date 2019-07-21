@@ -2,37 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-<<<<<<< Updated upstream
-  <suite name="Default suite" duration-ms="1382" started-at="2019-07-21T17:20:29Z" finished-at="2019-07-21T17:20:30Z">
+  <suite name="Default suite" duration-ms="1475" started-at="2019-07-21T17:36:53Z" finished-at="2019-07-21T17:36:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1382" started-at="2019-07-21T17:20:29Z" finished-at="2019-07-21T17:20:30Z">
+    <test name="Default test" duration-ms="1475" started-at="2019-07-21T17:36:53Z" finished-at="2019-07-21T17:36:55Z">
       <class name="RunnerClass.RunnerClass">
-        <test-method status="PASS" signature="AssignData()[pri:0, instance:RunnerClass.RunnerClass@61a485d2]" name="AssignData" is-config="true" duration-ms="1854" started-at="2019-07-21T22:50:27Z" finished-at="2019-07-21T22:50:29Z">
+        <test-method status="PASS" signature="AssignData()[pri:0, instance:RunnerClass.RunnerClass@61a485d2]" name="AssignData" is-config="true" duration-ms="1864" started-at="2019-07-21T23:06:52Z" finished-at="2019-07-21T23:06:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AssignData -->
-        <test-method status="PASS" signature="SC_001()[pri:0, instance:RunnerClass.RunnerClass@61a485d2]" name="SC_001" duration-ms="1353" started-at="2019-07-21T22:50:29Z" description="Validate Change Password function with two parameters (newPassword &amp; oldPassword) should match with all password validation rules." finished-at="2019-07-21T22:50:30Z">
+        <test-method status="PASS" signature="SC_001()[pri:0, instance:RunnerClass.RunnerClass@61a485d2]" name="SC_001" duration-ms="1445" started-at="2019-07-21T23:06:53Z" description="Validate Change Password function with two parameters (newPassword &amp; oldPassword) should match with all password validation rules." finished-at="2019-07-21T23:06:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SC_001 -->
-        <test-method status="PASS" signature="close()[pri:0, instance:RunnerClass.RunnerClass@61a485d2]" name="close" is-config="true" duration-ms="2926" started-at="2019-07-21T22:50:30Z" finished-at="2019-07-21T22:50:33Z">
-=======
-  <suite name="Default suite" duration-ms="1305" started-at="2019-07-21T17:13:20Z" finished-at="2019-07-21T17:13:21Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="1305" started-at="2019-07-21T17:13:20Z" finished-at="2019-07-21T17:13:21Z">
-      <class name="RunnerClass.RunnerClass">
-        <test-method status="PASS" signature="AssignData()[pri:0, instance:RunnerClass.RunnerClass@61a485d2]" name="AssignData" is-config="true" duration-ms="1636" started-at="2019-07-21T22:43:18Z" finished-at="2019-07-21T22:43:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AssignData -->
-        <test-method status="PASS" signature="SC_001()[pri:0, instance:RunnerClass.RunnerClass@61a485d2]" name="SC_001" duration-ms="1273" started-at="2019-07-21T22:43:20Z" description="Validate Change Password function with two parameters (newPassword &amp; oldPassword) should match with all password validation rules." finished-at="2019-07-21T22:43:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SC_001 -->
-        <test-method status="PASS" signature="close()[pri:0, instance:RunnerClass.RunnerClass@61a485d2]" name="close" is-config="true" duration-ms="4110" started-at="2019-07-21T22:43:21Z" finished-at="2019-07-21T22:43:25Z">
->>>>>>> Stashed changes
+        <test-method status="PASS" signature="close()[pri:0, instance:RunnerClass.RunnerClass@61a485d2]" name="close" is-config="true" duration-ms="20226" started-at="2019-07-21T23:06:55Z" finished-at="2019-07-21T23:07:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
