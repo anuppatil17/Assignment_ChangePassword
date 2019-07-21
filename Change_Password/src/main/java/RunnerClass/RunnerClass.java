@@ -1,3 +1,7 @@
+/**
+ * CHANGE PASSWORD METHOD
+ * @author ANUP PATIL
+ */
 package RunnerClass;
 
 import java.awt.Desktop;
@@ -23,21 +27,27 @@ public class RunnerClass {
 																												// file
 																												// for
 																												// testcases
-
 	public static boolean mainChangePasswordflag = false, passwordStrengthFlag = false, repeatedCharCheckflag = false,
 			passwordRulesflag = false, specialCharflag = false, passwordnumericBalance = false,
 			passwordPercentageMatchflag = false;
 	public static int newPasswordLength;
 	public static String oldPassword;
-
-@BeforeSuite
-		public void AssignData() throws Exception {
+/**
+ * 
+ * Read test data from Excel and assign to different variables in Runtime/
+ */
+	@BeforeSuite
+	public void AssignData() throws Exception {
 		ExcelUtils.setExcelFile(filePath);
 		int RowNum = ExcelUtils.getRowContains("SC_001", 0, "Scenario");
 		oldPassword = ExcelUtils.getCellData(RowNum, 2, "Scenario");
 		newPassword = ExcelUtils.getCellData(RowNum, 3, "Scenario");
 		newPasswordLength = newPassword.length();
-}
+	}
+/**
+ * 
+ * Validate the Change Password with different inputs.
+ */
 	@Test(description = "Validate Change Password function with two parameters (newPassword & oldPassword) should match with all password validation rules.")
 
 	public void SC_001() throws Exception {
@@ -55,8 +65,11 @@ public class RunnerClass {
 			System.out.println("Change Password Result --" + mainChangePasswordflag);
 		} catch (Exception e) {
 			System.out.println("Something went wrong-" + e);
-		}}
-	
+		}
+	}
+/**
+ * After Execution in @AfterSuite method will open the Excel FIle
+ */
 	@AfterSuite
 	public void close() {
 		try {
