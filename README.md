@@ -1,14 +1,14 @@
 # Assignment_ChangePassword
 Set new password with multiple validations
 
-Below tools should be up and running
+# Below tools should be up and running
     #  IDE-Eclipse
     #  Programming Language –Java
     #  Project Dependency tool – Maven
     #  Framework-TestNG
     #  Version control-GitHub
 
-Automated Test Cases :
+# Automated Test Cases :
 
 Devloped below scenarios/test cases for different validations
 	# 1. New Password String should < 80 % of Old Password String
@@ -20,9 +20,9 @@ Devloped below scenarios/test cases for different validations
 
 
 
-Highlights :
+# Highlights :
 # 1. Devloped functions are dynamic.
   # 2. As maven is used for project dependency tool and it will automatically downloads are the required dependencies.
-     # 3.Integrated TestNG Framework to priorities the code execution, using different annotations 
-        # 4. As excel sheet is used for test data input and providing user friendly execution status.(After Exceution Excel will open with updated result)
-           # 5. The project is sync with git hub so that easy for code management.
+   # 3.Integrated TestNG Framework to priorities the code execution, using different annotations 
+   # 4. As excel sheet is used for test data input and providing user friendly execution status.(After Exceution Excel will open with updated result)
+   # 5. The project is sync with git hub so that easy for code management.
